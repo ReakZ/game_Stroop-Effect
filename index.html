@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stroop effect game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="startBoard">
+      <div class="startBoard__block">
+        <h1 class="startBoard__title">Stroop effect game</h1>
+        <button class="startBoard__button">Начать</button>
+      </div>
+    </div>
+
+    <div class="game">
+      <div class="score">
+        <div class="score__timer">Таймер:60</div>
+        <div class="score__score">Очки: 0</div>
+      </div>
+      <div class="gameBoard">
+        <h3 class="gameBoard__description">
+          Название цвета на левой карточке соотвествует цвету надписи на правой
+          карточке?
+        </h3>
+        <div class="gameBoard__cards">
+          <div class="gameBoard__card" id="leftCard">Синий</div>
+          <div class="gameBoard__card" id="rightCard">Красный</div>
+        </div>
+        <div class="gameBoard__alert">
+
+        </div>
+        <div class="gameBoard__buttons">
+          <button class="gameBoard__button" id="YesButton"><i class="fas fa-chevron-left"></i> Да</button>
+          <button class="gameBoard__button" id="NoButton">Нет <i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="screenEndGame hide">
+      <div class="screenEndGame__currentGame"></div>
+      <button class="screenEndGame__button"><i class="fas fa-undo"></i></button>
+      <h2 class="screenEndGame__tableTitle">Таблица ваших рекордов: </h2>
+      <table class="screenEndGame__table">
+
+
+
+      </table>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9c6f565505.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
